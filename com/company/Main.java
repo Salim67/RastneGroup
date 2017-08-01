@@ -7,7 +7,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name");
         name = input.nextLine();
-        System.out.println("Enter age");
+        System.out.println("Enter your age");
         age = input.nextLine();
         System.out.println("your name is"+ name);
         System.out.println("your age is"+ age);
