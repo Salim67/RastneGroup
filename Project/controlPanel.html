@@ -1,0 +1,384 @@
+
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+<title>Eshopping cart</title>
+	
+ <script type="text/javascript">
+        function validate_form() {
+            if (document.registration.uname.value == "") {
+                alert("Please fill in user name .");
+                return false;
+				}
+				
+				if (document.registration.password.value == "") {
+                alert("Enter Password .");
+                return false;
+            }	
+			if (document.registration.confirm_password.value == "") {
+                alert("Confirm Password .");
+                return false;
+            }	
+				
+			if (document.registration.fname.value == "") {
+                alert("Please enter first name ");
+                return false;
+            }
+				if (document.registration.sname.value == "") {
+                alert("Please enter second  name ");
+                return false;
+            }
+			
+				if (document.registration.lname.value == "") {
+                alert("Please enter last  name ");
+                return false;
+            }
+			
+			
+			
+			
+			
+			if (document.registration.idno.value == "") {
+                alert("Enter ID Number");
+                return false;
+            }	
+			 
+			
+            			
+			
+			
+			
+			
+			
+            alert("Your Registration is Successful ");
+ 
+ 
+        }
+		
+ 
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31 &&
+                (charCode < 48 || charCode > 57)) {
+                alert("Enter Number only ");
+                return false;
+            }
+            return true;
+        }
+
+ 
+        //-->
+		
+		
+    </script>
+	
+	 <script type="text/javascript">
+        function validate_post() {
+				if (document.sambaza.cat.value == "") {
+                alert("Please enter category .");
+                return false;
+				}
+				
+			if (document.sambaza.mdl.value == "") {
+                alert("Please enter Model ");
+                return false;
+            }
+				if (document.sambaza.qty.value == "") {
+                alert("Please enter quantity ");
+                return false;
+            }
+           
+			
+				if (document.sambaza.photo.value == "") {
+                alert("Please choose a picture");
+            }
+			
+		
+			if (document.sambaza.description.value == "") {
+                alert("Enter DESCRIPTION of the Item ");
+                return false;
+            }	
+			if (document.sambaza.price.value == "") {
+                alert("Please Enter Price  .");
+                return false;
+            }	
+					 
+			
+			
+			
+			
+			
+            alert("Your have successfully added an item ");
+ 
+ 
+        }
+		
+ 
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31 &&
+                (charCode < 48 || charCode > 57)) {
+                alert("Please Enter Number only ");
+                return false;
+            }
+            return true;
+        }
+
+ 
+        //-->
+		
+		
+    </script>
+	
+<script type="text/javascript">
+	 function delete_form() {
+	 if (document.deleteItem.delItem.value == "") {
+                alert("Enter Item Number.");
+                return false;
+            }
+			alert("Your have successfully deleted an Item ");
+			
+	 
+	 }
+	 	
+	 </script>
+	
+	
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirm_password").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match, Please make sure you have Entered the right Password");
+            return false;
+        }
+        return true;
+    }
+	
+		
+		
+</script>
+
+<script type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+	
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style3.css">
+
+</head>
+
+ 	<div id="topmenu">	
+
+
+
+	<div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            
+				   <a class="navbar-brand" HREF="index.html">Allmart</A>
+            </div>
+              <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav pull-right navbar-nav">
+             
+         <li>  	<a href='mobiles.php?itemnumber=0&rows=0&category=phones'>Category 1</A></li>
+	<li><A HREF="office_electronics.php?itemnumber=0&rows=0&category=office">category 2</A></li>
+	<li><A HREF="home_electronics.php?itemnumber=0&rows=0&category=home">Category 3</A>	</li>
+    	<li>  <a href="contactUs.html">Contact us</a> </li>
+	
+
+	
+
+               
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> MyMart <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    
+				
+					   <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="text-left"><strong>Employee User Name</strong></p>
+                              
+                                        <p class="text-left">
+                                            <a href="administration.html" class="btn btn-primary btn-block btn-sm">Logout</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                  
+			
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+	</div>
+	
+	
+	</div>
+<div class="cmargin">
+
+<div class="container">
+    	<div class="row">
+		<div class="panel-body">
+			
+							  <div class="pull-left">		
+									<div class="panel panel-login">
+					<div class="panel-heading">
+						
+								<h3>Employee Registration</h3>
+								<form NAME='registration' action='' method='post' onsubmit="return validate_form();" >
+						<p align='center'> USERNAME:<br> <INPUT TYPE='text' size='20' NAME='uname' onkeyup="AllowAlphabet()"/></p>
+						<p align='center'>PASSWORD:<br> <INPUT TYPE='password'size='20' name="password" id="password" /></p>
+						<p align='center'>CONFIRM PASSWORD:<br> <INPUT TYPE='password'size='20' name="confirm_password" id="confirm_password" /></p>
+						<p align='center'>FIRST NAME:<br> <INPUT TYPE='text'size='20' onkeypress="return onlyAlphabets(event,this);" NAME='fname'/></p>
+						<p align='center'>SECOND NAME:<br> <INPUT TYPE='text' onkeypress="return onlyAlphabets(event,this);"size='20'NAME='sname'/ ></p>
+						<p align='center'>LAST NAME:<br> <INPUT TYPE='text' onkeypress="return onlyAlphabets(event,this);" size='20'NAME='lname'/ ></p>
+						<p align='center'>ID NO.:<br> <INPUT TYPE='text' onkeypress="return isNumberKey(event)"  size='20' NAME="idno" ></p>
+						<p align='center'>DEPERTMENT:<br><input type='hidden' NAME='depertment'/>
+						  <select NAME='depertment' required= "required">
+						  <option value='' >DEPERTMENT
+						  <option value='general' >GENERAL
+						  <option value='technical' >TECHNICAL
+						  <option value='business' >BUSINESS  
+						  </select>
+						</p>
+						<input type='hidden' NAME='e' value ='admin' />
+						<p  align='center'><INPUT NAME='button1' TYPE='submit' VALUE='Register' onclick="return Validate()" /></p>
+						</FORM>
+
+				</div>
+				</div>
+				</div>
+				
+				<div class= "pull-right">
+			<div class="panel panel-login">
+					<div class="panel-heading">
+						<h3>DELETE ITEM</h3>
+				
+			<form name= " deleteItem" method="post" action="" onsubmit="return delete_form();">
+			<p>ITEM NUMBER: </p>         
+		 <input type="text" value="" onkeypress="return isNumberKey(event)" name="delItem" class="form-control" id="number" placeholder="Enter Item Number" required="required"  </td>
+			  
+						  
+			<p><input name="submit" type="submit"value="DELETE" / onclick="return delete_form()">	
+			   <input type="reset" name="Reset" value="Reset" /></p>      
+			  </form>
+			  
+			<div class="pull-right">
+			
+			
+					<table cellspacing="0" border="0" align="center"  >
+					
+					<tr>
+					<td colspan="1"  align="center"  >
+					<h3>INSERT ITEM</h3>
+					<p align="center">	</p>
+					<form NAME="sambaza"  action="" method="post" onsubmit="return validate_post();">
+						
+				<p align="center">CATEGORY:<br /><INPUT TYPE="hidden" > 
+				 <select name="category" required ="required">
+					<option value=" ">CATEGORY 
+					<option value="men" >Groceries   
+					<option value="ladies" >Utilities
+					 <option value="kids" >homeware
+					  <option value="giftvouchers" >GIFTs
+					   <option value="school" >SCHOOL Bags
+						 </select>	</p>
+					   
+
+				<p  align="center">CAGEROIES:(do not leave any preceding space))<br />
+				<input type="text"   size="20" name="cat" value=" "/ ></p>
+				<p  align="center">MODEL:<br /><input type="text" size="20" name="mdl" value=" "/ ></p>
+				<p  align="center">QUANTITY:<br /><input type="text" onkeypress="return isNumberKey(event)"   size="20" name="qty" value=" "/ ></p>
+						
+				<p align="center">PICTURE:<input name="photo" type="file" /></p>
+
+				<p  align="center">DESCRIPTION:<br /><textarea name="description" cols="25" rows="10" class="validate[optional] " ></textarea>
+				</p>
+
+
+				<p  align="center">PRICE:<input type="text" onkeypress="return isNumberKey(event)" accept="text" size="20" name="price" value=""/ ></p>
+
+					
+					<input type="hidden"  name="e" value="admin" />
+				<p  align="center"><INPUT NAME="button1" TYPE="submit" VALUE="POST"/ onclick="return Validate()" ></p>
+				</FORM>
+					
+					</td>
+					</div>
+					</div>
+						</div>
+						</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			
+	  </div>
+			
+			</div>
+			</div>
+			</div>
+			</div>
+			
+
+	<style>
+	.navbar-login
+{
+    width: 200px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+
+.icon-size
+{
+    font-size: 50px;
+}
+	
+	</style>
+	
+	
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

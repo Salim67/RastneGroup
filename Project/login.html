@@ -1,0 +1,240 @@
+
+	
+
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+<title>Eshopping cart</title>
+	   <script type="text/javascript">
+        function validate_form() {
+            if (document.detail.username.value == "") {
+                alert("Please Enter Email Address.");
+                return false;
+            }
+			if (document.detail.password.value == "") {
+                alert("Please Enter Password.");
+                return false;
+            }
+			
+			
+			
+			
+			
+        
+ 
+ 
+        }
+ 
+    </script>
+
+
+
+
+
+
+	
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+</head>
+
+ 	<div id="topmenu">	
+
+
+
+	<div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            
+				   <a class="navbar-brand" HREF="index.html">Allmart</A>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav pull-right navbar-nav">
+             
+         <li>  	<a href="store.html">Store</A></li>
+	
+    	<li>  <a href="contactUs.html">Contact us</a> </li>
+	
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> MyMart <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    
+				  	<li>  <a href="login.html">User Log in</a> </li>
+				
+					     
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header"></li>
+                 
+                   	<li><a HREF="administration.html">Admin Login</a></li>
+                  </ul>
+                </li>
+			
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+	
+	
+	</div>
+	 <body>
+
+
+
+<div class="cmargin">
+
+<div class="container">
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="Register.html" id="register-form-link">Register</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form name="detail" id="login-form" action="cart.html" onsubmit="return validate_form();" method="post" role="form" onsubmit="return validate_form();" style="display: block;">
+							<div class="form-group">
+                            <label for="email" >
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+								</div>
+                        </div>
+						<div class="form-group">
+                            <label for="Password" >
+                                Password</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span>  
+                                </span>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required="required" />
+								</div>
+                        </div>
+						
+									
+									<div class="form-group text-center">
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Remember Me</label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="text-center">
+													<a href="PReset.html" tabindex="5" class="forgot-password">Forgot Password?</a>
+												</div>
+													<div class="text-center">
+													<a href="Register.html" tabindex="5" class="Register">Dont have an Account?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	   <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+            	<h2>Logo</h2>
+                <h1> All Mart cash and Carry 2017</h1>
+            </div>
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h4>All Mart </h4>
+            	<div class="col-md-6">
+                    <ul class="list">
+					  <li><a HREF="faq.html">FAQ & Help </a>	</li>
+                    <li><a HREF="AboutUs.html">About Us</a>	</li>
+					  <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+							 
+                      
+                    </ul>
+                </div>
+            
+            	<div class="col-md-6">
+                    <ul class="pages">
+                     <h4>Follow us on </h4>
+                     
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+						<li><a href="#">twitter</a></li>
+						
+                    </ul>
+                </div>
+            </div>
+        	
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+            	
+              <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+                
+                <form action="" method="post">
+                    	
+						
+							<div class="pull-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></span>
+									<input type="text" class="form-control input-lg" name="email" id="email" required="required" placeholder="Enter your Email"/>
+								</div>
+							</div>
+							<div class="pull-right"></div>
+                    <br/><br/><br/>
+                    <button class="btn btn-warning btn-lg">Subscribe Now!</button>
+              </form>
+            </div>
+	
+        </div>
+		
+    </footer>
+	</div>
+	</div>
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
+

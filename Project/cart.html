@@ -1,0 +1,230 @@
+
+	
+<!DOCTYPE html>
+<html >
+<head>
+<title>E-Cart</title>
+	
+	
+
+<script type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style3.css">
+	
+</head>
+
+
+<body>
+	<div id="header">
+	<div id="headerinside">	
+		
+
+		
+	</div>
+	<div id="topmenu">	
+
+
+
+	<div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            
+				   <a class="navbar-brand" HREF="index.html">Allmart</A>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav pull-right navbar-nav">
+             
+         <li>  	<a href="">Store</A></li>
+	
+    	<li>  <a href="contactUs.html">Contact us</a> </li>
+	
+
+               
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> MyMart <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+               <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="text-left"><strong> User Name</strong></p>
+                              
+                                        <p class="text-left">
+                                            <a href="index.html" class="btn btn-primary btn-block btn-sm">Logout</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                  </ul>
+                </li>
+			
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+	
+	
+	</div>
+	
+
+<div class="cmargin">
+<div class= "container">
+    	<div class="row">
+			<div class="pull-left">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+					<div class="panel-body">
+
+					  <div id="container">
+				
+				<form action="" method="post"/>
+				<table align="center" position="absolute"   bottom=0px border="0"  cellspacing="2" width="600" height="300" >
+				<tr  ><td align="center" colspan="6"><h3><font color="#151515">My Shopping Cart</font></h3>
+				</div>
+				 </td></tr>
+				<tr bgcolor="#d3d3d3" ><td align="center">ITEM NUMBER</td><td align="center">MANUFACTURER</td><td align="center">MODEL</td><td align="">QUANTITY</td><td align="center">UNIT PRICE</td><td align="center">SUB TOTAL</td></tr><tr>
+				
+				
+				<td align='center'></td><td align='center'> </td><td align='center' > </td><td align='center'><INPUT TYPE='text'size='8' value='' NAME=''/>	  
+					   <input type='hidden' NAME='' value ='' />
+					   <input type='hidden' NAME='update' value ='update' /><td align='center'><font color=red align=center></font></td><td align='center'></td></tr><tr>
+			</tr>
+			<br>
+			<tr bgcolor="#d3d3d3" ><td align="center">TOTAL</td><td align="center" colspan="4"><font color="#3f3f3f">
+			Please Enter the desired Quantities and Click  below to Update</font></td><td align="center"><b> </b></td></tr>
+			
+			<tr  ><td align="center"></td><td align="center" colspan="4"><font color="#3f3f3f"><p  align='center'><INPUT NAME='button1'  class="btn btn-default btn-block btn-md" TYPE='submit' VALUE='UPDATE CART'/></p></font></td><td align="center"></td></tr>
+			<tr  ><td align="center"></td><td align="center" colspan="4"><font color="#3f3f3f"><p  align='center'><INPUT NAME='button2'  class="btn btn-default btn-block btn-md" TYPE='submit' VALUE='REMOVE FROM CART'/></p></font></td><td align="center"></td></tr>
+			<tr  ><td align="center"></td><td align="center" colspan="4"><font color="#3f3f3f"><p  align='center'>     <a href="store.html" class="btn btn-default btn-block btn-sm" >Continue Shopping</a></p></font></td><td align="center"></td></tr>
+			
+                                       
+                                       
+			<form action="" method="post">
+			<table width="550" align="center">
+
+			<tr ><td colspan="3" align="center"><font color=""><h3>PLEASE ENTER YOUR Shipping Address </h3></font></td></tr>
+				
+				<input type="hidden" name="amount" value="600" />
+				<input type="hidden" name="type" value="MERCHANT" readonly="readonly" />
+				<input type="hidden" name="description" value="Account load-up" />
+				<input type="hidden" name="reference" value="001" />    
+				
+				<input type="hidden" name="cartname" value="" />
+				<tr><td>Address 1:</td><td><input type="text" size="30"  name="add1" value="" /></td><td rowspan="3">
+				<tr><td>Address 2:</td><td><input type="text" size="30" name="add2" value="" /></td></tr>
+			<tr><td>state:</td><td><input type="text" size="30" name="address" value="" /></td></tr>
+			<tr><td>zip code:</td><td><input type="text" size="30" name="email" value="" /></td></tr>
+<br>
+			<tr  ><td colspan="3" align="center" ><input align="right"  type="submit" value="CHECK OUT" class="btn btn-default btn-block btn-md" /></td></tr>
+			</br>
+			</table>
+			</form>
+</table>
+
+</FORM>
+		</div>
+			</div>
+				</div>
+					</div>
+						</div>
+							</div>
+								</div>
+			</div>
+				</div>
+					</div>
+						</div>
+							</div>
+								</div>
+			</div>
+				
+				
+<div class="cmargin">
+<div class="container">
+ <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+            	<h2>Logo</h2>
+                <h1> All Mart cash and Carry 2017</h1>
+            </div>
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h4>All Mart </h4>
+            	<div class="col-md-6">
+                    <ul class="list">
+					  <li><a HREF="faq.html">FAQ & Help </a>	</li>
+                    <li><a HREF="AboutUs.html">About Us</a>	</li>
+					  <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+							 
+                      
+                    </ul>
+                </div>
+            
+            	<div class="col-md-6">
+                    <ul class="pages">
+                     <h4>Follow us on </h4>
+                     
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+						<li><a href="#">twitter</a></li>
+						
+                    </ul>
+                </div>
+            </div>
+        	
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+            	
+              <p>Subscribe to our weekly Newsletter and stay tuned.</p>
+                
+                <form action="" method="post">
+                    	
+						
+							<div class="pull-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></span>
+									<input type="text" class="form-control input-lg" name="email" id="email" required="required" placeholder="Enter your Email"/>
+								</div>
+							</div>
+							<div class="pull-right"></div>
+                    <br/><br/><br/>
+                    <button class="btn btn-warning btn-lg">Subscribe Now!</button>
+              </form>
+            </div>
+	
+        </div>
+		
+    </footer>
+	  </div>
+</div>
+</div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
